@@ -11,7 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'rclpy', 'sensor_msgs', 'cv_bridge', 'geometry_msgs', 'std_msgs', 'ultralytics'],
     zip_safe=True,
     maintainer='haaruki',
     maintainer_email='haruki.isono861@gmail.com',
