@@ -16,7 +16,7 @@ class FollowPersonNode(Node):
         self.kp_angular = 0.02  # 追従の応答速度を向上
         self.kp_linear = 0.6  # 追従の速度を向上
         self.min_distance = 0.6
-        self.stop_distance = 1.0
+        self.stop_distance = 1.5  # 停止距離を1.5mに変更
 
         self.tracking_id = None  # 最初に検出した人のID
         self.last_seen_time = self.get_clock().now()
