@@ -54,9 +54,9 @@ class HumanDetectionNode(Node):
                         distance = depth_image[cy, cx] / 1000.0
 
                         person_position = Point()
-                        person_position.x = cx
-                        person_position.y = cy
-                        person_position.z = distance
+                        person_position.x = float(cx)  # floatに変換
+                        person_position.y = float(cy)  # floatに変換
+                        person_position.z = float(distance)  # floatに変換
                         self.publisher.publish(person_position)
 
                         text = f"Person: {distance:.2f}m"

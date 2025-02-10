@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'human_detection = human_following.human_detection:main',
+            'follow_person = human_following.follow_person:main',
         ],
     },
 )
